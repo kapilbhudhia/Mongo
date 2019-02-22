@@ -93,6 +93,7 @@ namespace MongoAggregate
             var faceWidths = 
                 mgCollection
                 .Aggregate().AppendStage<BsonDocument>(addFieldDoc)
+            //    .Match(bd)
             //     .AppendStage(new BsonDocument {
             //         {
             //             "$match", new BsonDocument{
